@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>store</groupId>
-	<artifactId>product</artifactId>
+	<artifactId>product-interface</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>product</name>
 	<description>Projeto para exemplo de produtos na ESPM</description>
