@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient("store-product")
 public interface ProductController {
 
-    @GetMapping("/")
+    @GetMapping("/product/")
     public List<ProductOut> list();
 
-    @GetMapping("/{id}")
+    @GetMapping("/product/{id}")
     public ProductOut get(@PathVariable(required = true) String id);
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/product/{id}")
     public void delete(@PathVariable(required = true) String id);
 
-    @PostMapping("/")
+    @PostMapping("/product/")
     public ResponseEntity<Object> create(@RequestBody ProductIn in);
     
 }
